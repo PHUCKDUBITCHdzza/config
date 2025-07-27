@@ -3,7 +3,7 @@ getgenv().gagConfig = {
     SCRIPT_KEY = script_key,
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg" },
-    BUY_TRAVELING_MERCHANT = { "Bee Egg"},
+    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Primal Egg"},
     BUY_EVENT_SHOP = { "Zen Egg", ["Koi"] = 2, ["Raiju"] = 1},
     MAX_EVENT_RESTOCK_SHECKLES = 1000000000,
     PLACE_ALL_EVENT_STAFF = true,
@@ -17,7 +17,6 @@ getgenv().gagConfig = {
     EXTRA_PET_EQUIP_SLOTS = 0,
     ADD_FRIEND = true,
     OPEN_ALL_SEED_PACK = true,
-    MUTATE_PET = { "Capybara" },
     FAST_LEVEL_PET = true,
 
     MAX_PLANTS = 300,
