@@ -7,7 +7,7 @@ getgenv().gagConfig = {
     BUY_EVENT_SHOP = { "Zen Egg", ["Koi"] = 2, ["Raiju"] = 1},
     MAX_EVENT_RESTOCK_SHECKLES = 1000000000,
     PLACE_ALL_EVENT_STAFF = true,
-    FOCUS_KITSUNE_NPC = true
+    FOCUS_KITSUNE_NPC = true,
     
     -- General:
     AUTO_UPDATE_RESTART = true,
