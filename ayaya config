@@ -6,8 +6,8 @@ getgenv().ConfigsKaitun = { -- thx config cradit to npk02
 	
 	["Rejoin When Update"] = true,
 	["Limit Tree"] = {
-		["Limit"] = 300,
-		["Destroy Untill"] = 280,
+		["Limit"] = 250,
+		["Destroy Untill"] = 230,
 
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -81,7 +81,8 @@ getgenv().ConfigsKaitun = { -- thx config cradit to npk02
 		},
 		Shop = {
 			"Zen Egg",
-			"Koi",
+			["Koi"] = 2,
+			["Raiju"] = 1
 		},
 		Restocks_limit = 1000000000,
 		MinimumChi = 10
@@ -135,23 +136,27 @@ getgenv().ConfigsKaitun = { -- thx config cradit to npk02
 	},
 
 	Pets = {
-		["Start Delete Pet At"] = 35,
+		["Start Delete Pet At"] = 42,
 		["Upgrade Slot"] = {
 			["Pet"] = {
 				"Starfish",
 			},
-			["Limit Upgrade"] = 2,
+			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
+				"Tanchozuru",
 				"Seal",
 				"Koi",
 				"Capybara",
-				"Seal",
 			},
 		},
 		Locked = {
-			["Koi"] = 8,
+			["Raiju"] = 2,
+			["Corrupted Kodama"] = 4,
+			["Kodama"] = 5,
+			"Corrupted Kitsune",
+			["Koi"] = 1,
 			"Kitsune",
-			"Kappa",
+			["Kappa"] = 1,
 			"Fennec Fox",
 			"Disco Bee",
 			"Raccoon",
@@ -165,8 +170,9 @@ getgenv().ConfigsKaitun = { -- thx config cradit to npk02
 			"Ankylosaurus",
 			"Dilophosaurus",
 			["Capybara"] = 5,
-			["Seal"] = 5,
+			["Seal"] = 1,
 			"Red Fox",
+			["Tanuki"] = 3,
 			["Tanchozuru"] = 5,
 		},
 		LockPet_Weight = 7, -- if Weight >= 10 they will locked,
@@ -199,6 +205,7 @@ getgenv().ConfigsKaitun = { -- thx config cradit to npk02
 				"Fennec Fox",
 				"Red Fox",
 				"Kitsune",
+				"Corrupted Kitsune",
 			},
 			Pet_Weight_Noti = true,
 		}
