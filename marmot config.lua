@@ -4,7 +4,7 @@ getgenv().gagConfig = {
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg" },
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Primal Egg"},
-    BUY_EVENT_SHOP = { "Zen Egg", ["Koi"] = 2, ["Raiju"] = 1},
+    BUY_EVENT_SHOP = { "Zen Egg", "Raiju"},
     MAX_EVENT_RESTOCK_SHECKLES = 1000000000,
     PLACE_ALL_EVENT_STAFF = true,
     FOCUS_KITSUNE_NPC = true,
@@ -12,8 +12,8 @@ getgenv().gagConfig = {
     -- General:
     AUTO_UPDATE_RESTART = true,
     REDEEM_CODES = {},
-    EXTRA_PET_SLOTS = 1,
-    EXTRA_EGG_SLOTS = 4,
+    EXTRA_PET_SLOTS = 2,
+    EXTRA_EGG_SLOTS = 5,
     EXTRA_PET_EQUIP_SLOTS = 0,
     ADD_FRIEND = true,
     OPEN_ALL_SEED_PACK = true,
@@ -34,14 +34,14 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
-    KEEP_PETS = { ["Corrupted Kodama"] = 4, ["Kodama"] = 5, "Corrupted Kitsune", ["Starfish"] = 3, ["Koi"] = 4, "Kitsune", ["Kappa"] = 3, "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Brontosaurus", "T-Rex", "Spinosaurus", "Ankylosaurus", "Dilophosaurus", ["Capybara"] = 2, [ "Seal"] = 2, "Red Fox", "Tanchozuru", ["Tanuki"] = 3, ["Ostrich"] = 2, ["Raiju"] = 4},
+    KEEP_PETS = { ["Corrupted Kodama"] = 7, ["Kodama"] = 2, "Corrupted Kitsune", ["Starfish"] = 3, "Kitsune", ["Kappa"] = 1, "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Brontosaurus", "T-Rex", "Spinosaurus", "Ankylosaurus", "Dilophosaurus", ["Capybara"] = 3, [ "Seal"] = 1, "Red Fox", "Tanchozuru", ["Tanuki"] = 1, ["Ostrich"] = 1, ["Raiju"] = 2},
     KEEP_PETS_WEIGHT = 6,
-    KEEP_PETS_AGE = { ["Starfish"] = 75, ["Capybara"] = 75},
+    KEEP_PETS_AGE = { ["Starfish"] = 60, ["Capybara"] = 60},
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Koi"] = 2, "Seal", "Starfish", "Tanchozuru", "Capybara"},
+    EQUIP_PETS = { ["Starfish"] = 2, ["Capybara"] = 1, "Tanchozuru"},
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish", "Capybara"},
-    REMOVE_PET_MAX_UPGRADE = { "Capybara", "Starfish" },
+    REMOVE_PET_MAX_UPGRADE = {},
 
     BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
