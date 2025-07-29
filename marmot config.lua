@@ -12,7 +12,7 @@ getgenv().gagConfig = {
     -- General:
     AUTO_UPDATE_RESTART = true,
     REDEEM_CODES = {},
-    EXTRA_PET_SLOTS = 2,
+    EXTRA_PET_SLOTS = 3,
     EXTRA_EGG_SLOTS = 5,
     EXTRA_PET_EQUIP_SLOTS = 0,
     ADD_FRIEND = true,
@@ -39,7 +39,7 @@ getgenv().gagConfig = {
     KEEP_PETS_AGE = { ["Starfish"] = 60, ["Capybara"] = 60},
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Starfish"] = 2, ["Capybara"] = 1, "Tanchozuru"},
+    EQUIP_PETS = { ["Starfish"] = 4, ["Capybara"] = 1, "Tanchozuru"},
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish", "Capybara"},
     REMOVE_PET_MAX_UPGRADE = {},
 
