@@ -11,8 +11,8 @@ getgenv().gagConfig = {
     -- General:
     AUTO_UPDATE_RESTART = true,
     REDEEM_CODES = {},
-    EXTRA_PET_SLOTS = 3,
-    EXTRA_EGG_SLOTS = 5,
+    EXTRA_PET_SLOTS = 4,
+    EXTRA_EGG_SLOTS = 4,
     EXTRA_PET_EQUIP_SLOTS = 0,
     ADD_FRIEND = true,
     OPEN_ALL_SEED_PACK = true,
@@ -35,12 +35,12 @@ getgenv().gagConfig = {
 
     KEEP_PETS = { ["Corrupted Kodama"] = 7, ["Kodama"] = 2, "Corrupted Kitsune", ["Starfish"] = 3, "Kitsune", ["Kappa"] = 1, "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Brontosaurus", "T-Rex", "Spinosaurus", "Ankylosaurus", "Dilophosaurus", ["Capybara"] = 3, [ "Seal"] = 1, "Red Fox", "Tanchozuru", ["Tanuki"] = 1, ["Ostrich"] = 1, ["Raiju"] = 2},
     KEEP_PETS_WEIGHT = 6,
-    KEEP_PETS_AGE = { ["Starfish"] = 76, ["Capybara"] = 76},
+    KEEP_PETS_AGE = { ["Starfish"] = 60, ["Capybara"] = 60},
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Starfish"] = 4, ["Capybara"] = 1, "Tanchozuru"},
+    EQUIP_PETS = { ["Starfish"] = 1, ["Capybara"] = 1, ["Kodama"] = 4, ["Corrupted Kodama"] = 3},
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish", "Capybara"},
-    REMOVE_PET_MAX_UPGRADE = {},
+    REMOVE_PET_MAX_UPGRADE = { "Starfish", "Capybara"},
 
     BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
