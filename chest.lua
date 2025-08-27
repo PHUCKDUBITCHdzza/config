@@ -39,19 +39,34 @@ local function inputItem(slot, itemName, itemType, uuid)
     print("✅ "..itemName.." (UUID: "..uuid..") -> slot "..slot)
 end
 
--- Auto Craft (Beanstalk 1 = uuid[1], Beanstalk 2 = uuid[2])
+-- Auto Craft
 local function autoCraft(recipeName, itemsNeeded)
     -- chọn công thức
     CraftRemote:FireServer("SetRecipe", bench, "GiantBeanstalkEventWorkbench", recipeName)
 
     for slot, data in ipairs(itemsNeeded) do
         local uuids = getUUIDs(data.Name)
-        if uuids[slot] then
-            inputItem(slot, data.Name, data.Type, uuids[slot])
-        elseif uuids[1] then
-            inputItem(slot, data.Name, data.Type, uuids[1])
+
+        if data.Name == "Beanstalk" then
+            if slot == 1 then
+                -- Beanstalk 1: chạy theo thứ tự 1 → 2 → 3
+                for i = 1, #uuids do
+                    inputItem(slot, data.Name, data.Type, uuids[i])
+                end
+            elseif slot == 2 then
+                -- Beanstalk 2: chạy theo thứ tự 3 → 2 → 1
+                for i = #uuids, 1, -1 do
+                    inputItem(slot, data.Name, data.Type, uuids[i])
+                end
+            end
         else
-            warn("❌ Không tìm thấy item: "..data.Name)
+            -- Item khác: chỉ cần UUID[1]
+            local uuid = uuids[1]
+            if uuid then
+                inputItem(slot, data.Name, data.Type, uuid)
+            else
+                warn("❌ Không tìm thấy item: "..data.Name)
+            end
         end
     end
 
@@ -70,7 +85,7 @@ local function autoCraft(recipeName, itemsNeeded)
     print("📦 Đã Claim sản phẩm thành công")
 end
 
--- 🌀 Lặp lại mỗi 600 giây
+-- 🌀 Lặp lại
 task.spawn(function()
     local count = 0
     while true do
@@ -83,6 +98,6 @@ task.spawn(function()
             {Name = "Sprout Egg", Type = "PetEgg"},
         })
         print("⏳ Chờ 600 giây trước lần craft tiếp theo...")
-        task.wait(60)
+        task.wait(90)
     end
 end)
