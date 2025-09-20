@@ -1,4 +1,5 @@
 script_key="oBpacYiqvVNEYrruawLMLMPNANOfZWpk";
+setfpscap(15)
 
 getgenv().gagConfig = {
     LOW_CPU = true,  -- Tralalero Tralala
